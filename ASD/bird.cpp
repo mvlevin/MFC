@@ -7,7 +7,7 @@ Bird::Bird(){
 	else bird_state=0;
 	fly_state=0;
 	dis_state=2;
-	y=0;//Дс
+	y=0;
 	Time=0;
 	delay=0;
 	v=bird_v0;
