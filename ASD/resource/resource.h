@@ -14,7 +14,6 @@
 #define IDR_WAVE_HIT                    122
 #define IDR_WAVE_PANEL                  123
 #define IDR_WAVE_POINT                  124
-#define IDR_HTML1                       125
 
 
 #ifdef APSTUDIO_INVOKED
