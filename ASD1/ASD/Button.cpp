@@ -13,7 +13,6 @@ void Button::click(CPoint &point){
 	}else if(point.x>=155 && point.x<=155+116 && point.y>=340 && point.y<=340+70){
 		kind=score;
 		move=true;
-		LoadFromResource(IDR_HTML1);
 	}else kind=none;
 }
 void Button::logic(int &game_state){
