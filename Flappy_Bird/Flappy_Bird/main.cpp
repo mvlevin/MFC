@@ -1,7 +1,7 @@
-#include <afxwin.h>// MFC Основные и стандартные компоненты
+#include <afxwin.h>
 #include "afxext.h"
 #include <string.h>
-#include "resource.h" //Файл ресурсов
+#include "resource.h"
 #include <ctime>
 #include <time.h>
 #include <math.h>
@@ -105,7 +105,7 @@ int Counter = 0;
 BIRD Bird(0, 0, CPoint(0, 0), 0, RGB(255, 0, 0));
 std::vector<PIPE> Pipes;
 
-//Задаем класс окна и определяем его поведение
+
 class CMainWnd : public CFrameWnd
 {
 public:
@@ -117,7 +117,7 @@ public:
 	afx_msg void OnKeyUp(UINT nButtonCode, UINT nRepCnt, UINT nFlags);
 	afx_msg void OnKeyDown(UINT nButtonCode, UINT nRepCnt, UINT nFlags);
 	afx_msg void OnTimer(UINT nTimerID);
-	CMenu m_wndMenu; // Добавляем меню
+	CMenu m_wndMenu;
 	CMainWnd();
 	~CMainWnd();
 
@@ -125,9 +125,9 @@ public:
 	bool End = false;
 	bool Quit = false;
 private:
-	DECLARE_MESSAGE_MAP(); // таблица откликов
+	DECLARE_MESSAGE_MAP();
 };
-BEGIN_MESSAGE_MAP(CMainWnd, CFrameWnd)	// таблица откликов на сообщения
+BEGIN_MESSAGE_MAP(CMainWnd, CFrameWnd)
 	ON_WM_CREATE()
 	ON_WM_PAINT()
 	ON_COMMAND(ID_QUIT, Menu_QUIT)
@@ -140,13 +140,13 @@ int CMainWnd::OnCreate(LPCREATESTRUCT lpCreateStruct)
 {
 	if (CFrameWnd::OnCreate(lpCreateStruct) == -1)
 		return -1;
-	m_wndMenu.LoadMenu(IDR_MENU1);	// Загрузить меню из файла ресурса
-	SetMenu(&m_wndMenu);	// Установить меню
+	m_wndMenu.LoadMenu(IDR_MENU1);
+	SetMenu(&m_wndMenu);
 	return 0;
 }
 CMainWnd::CMainWnd()
 {
-	Create(NULL, TEXT("Flappy Bird"), WS_OVERLAPPEDWINDOW, MAIN_WINDOW, NULL, NULL);// Создать окно программы
+	Create(NULL, TEXT("Flappy Bird"), WS_OVERLAPPEDWINDOW, MAIN_WINDOW, NULL, NULL);
 }
 afx_msg void CMainWnd::OnPaint() {
 	CPaintDC DeviceContext(this);
@@ -277,22 +277,22 @@ afx_msg void CMainWnd::OnTimer(UINT nTimerID) {
 		}
 	}
 }
-//Определяем класс приложения
+
 class CMyApp : public CWinApp
 {
 public:
-	CMyApp();			//конструктор по умолчанию
-	virtual BOOL InitInstance();//стандартная инициализация
+	CMyApp();
+	virtual BOOL InitInstance();
 };
 
-CMyApp::CMyApp() // конструктор главного класса приложения
+CMyApp::CMyApp()
 {}
-BOOL CMyApp::InitInstance() // стандартная инициализация
+BOOL CMyApp::InitInstance()
 {
-	m_pMainWnd = new CMainWnd();	// создать класс окна
-	ASSERT(m_pMainWnd);	// проверить его правильность
-	m_pMainWnd->ShowWindow(SW_SHOW);// Показать окно
-	m_pMainWnd->UpdateWindow();	// Обновить окно
-	return TRUE;		// Вернуть что все нормально
+	m_pMainWnd = new CMainWnd();
+	ASSERT(m_pMainWnd);
+	m_pMainWnd->ShowWindow(SW_SHOW);
+	m_pMainWnd->UpdateWindow();
+	return TRUE;
 };
-CMyApp theApp;	// запуск приложения
+CMyApp theApp;
