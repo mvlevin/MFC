@@ -1,0 +1,19 @@
+﻿Сборка начата 27.09.2015 13:29:07.
+     1>Проект "C:\Users\Kirill\documents\visual studio 2013\Projects\Flappy_Bird\Flappy_Bird\Flappy_Bird.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+     1>c:\users\kirill\documents\visual studio 2013\projects\flappy_bird\flappy_bird\main.cpp(91): warning C4018: <: несоответствие типов со знаком и без знака
+     1>c:\users\kirill\documents\visual studio 2013\projects\flappy_bird\flappy_bird\main.cpp(170): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\kirill\documents\visual studio 2013\projects\flappy_bird\flappy_bird\main.cpp(197): warning C4018: <: несоответствие типов со знаком и без знака
+     1>c:\users\kirill\documents\visual studio 2013\projects\flappy_bird\flappy_bird\main.cpp(243): warning C4018: <: несоответствие типов со знаком и без знака
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kirill\documents\visual studio 2013\Projects\Flappy_Bird\Debug\Flappy_Bird.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\Kirill\documents\visual studio 2013\Projects\Flappy_Bird\Debug\Flappy_Bird.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kirill\documents\visual studio 2013\Projects\Flappy_Bird\Debug\Flappy_Bird.lib" /MACHINE:X86 Debug\Flappy_Bird.res
+         Debug\main.obj
+         Flappy_Bird.vcxproj -> C:\Users\Kirill\documents\visual studio 2013\Projects\Flappy_Bird\Debug\Flappy_Bird.exe
+     1>Сборка проекта "C:\Users\Kirill\documents\visual studio 2013\Projects\Flappy_Bird\Flappy_Bird\Flappy_Bird.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:03.05
